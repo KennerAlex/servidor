@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoriaProductoController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\PedidoVentaController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Http\Request;
@@ -17,5 +18,7 @@ Route:: get('/login/{email}/{password}',[UsuarioController::class,'verificaclave
 Route::resource('/listado', ClienteController::class);
 Route::resource('/productos', ProductoController::class);
 Route::resource('/categoria', CategoriaProductoController::class);
+Route::resource('/pedidoventa', PedidoVentaController::class);
+
 
 
